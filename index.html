@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jivraj Capital — Where research grows into wealth.</title>
+    <meta name="description"
+        content="Jivraj Capital. Research-driven wealth management built on deep roots, structured strategy, and long-term growth.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ── Custom cursor ── -->
+    <div id="cursor" aria-hidden="true"></div>
+    <div id="cursorRing" aria-hidden="true"></div>
+
+    <!-- ── Navbar ── -->
+    <header id="nav" role="banner">
+        <a class="nav-brand" href="#hero">
+            <img src="assets/download-2.png" alt="Jivraj Capital" class="logo">
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#philosophy" class="nav-link">Philosophy</a>
+            <a href="#research-system" class="nav-link">Research</a>
+            <a href="#trust" class="nav-link">Insights</a>
+            <a href="#calculators" class="nav-link">Calculators</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#enquiry" class="nav-cta">Schedule a Call</a>
+            <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="nav-mobile" id="navMobile" aria-hidden="true">
+        <nav>
+            <a href="#philosophy" class="nav-mobile-link">Philosophy</a>
+            <a href="#research-system" class="nav-mobile-link">Research</a>
+            <a href="#trust" class="nav-mobile-link">Insights</a>
+            <a href="#calculators" class="nav-mobile-link">Calculators</a>
+        </nav>
+        <a href="#enquiry" class="nav-mobile-cta">Schedule a Call</a>
+    </div>
+
+    <!-- ════════════════════════════
+       § 1 · HERO
+       ════════════════════════════ -->
+    <section id="hero" aria-label="Introduction">
+
+        <!-- ── Cinematic background video (lowest layer) ── -->
+        <video id="heroVideo" class="hero-video" src="assets/Hero Video.mp4" autoplay muted loop playsinline
+            preload="auto" aria-hidden="true">
+        </video>
+
+        <!-- ── Dark overlay — keeps video from overpowering copy ── -->
+        <div class="hero-video-overlay" aria-hidden="true"></div>
+
+        <!-- ── Premium lighting environment (back → front) ── -->
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-light" aria-hidden="true"></div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+
+        <div id="heroParticles" aria-hidden="true"></div>
+
+        <div class="hero-center">
+
+            <!-- Headline + decorative rule -->
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Jivraj Capital</p>
+                <div class="hero-rule" aria-hidden="true"></div>
+                <h1 class="hero-headline">
+                    <span class="clip">
+                        <span class="hero-line">
+                            <span class="hw">Where</span> <span class="hw">research</span>
+                        </span>
+                    </span>
+                    <span class="clip">
+                        <em class="hero-line">
+                            <span class="hw">grows</span> <span class="hw">into</span> <span class="hw">wealth.</span>
+                        </em>
+                    </span>
+                </h1>
+                <p class="hero-sub">
+                    <span class="hw-sub">Research-driven</span> <span class="hw-sub">wealth management.</span> <span
+                        class="hw-sub">Built for the long term.</span>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Scroll cue — minimal animated line only -->
+        <div class="scroll-cue" aria-label="Scroll to explore">
+            <div class="scroll-rail">
+                <div class="scroll-runner"></div>
+            </div>
+        </div>
+
+        <!-- Wave: Hero → Story (cream-b, directs from LEFT) -->
+        <div class="wave-reveal" data-direction="left" aria-hidden="true">
+            <svg class="section-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C180,90 360,0 540,48 C720,90 900,10 1080,52 C1260,88 1380,20 1440,60 L1440,90 L0,90 Z"
+                    fill="#EEE9DC" />
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- ════════════════════════════
+       § 2 · PHILOSOPHY (Cinematic Engine)
+       ════════════════════════════ -->
+    <section id="philosophy-engine" aria-label="Our Philosophy">
+        <div class="pe-pin-shell">
+            <div class="pe-backdrop" aria-hidden="true">
+                <div class="pe-radial pe-radial--one"></div>
+                <div class="pe-radial pe-radial--two"></div>
+                <div class="pe-grid"></div>
+                <div class="pe-horizon"></div>
+                <div class="pe-noise"></div>
+            </div>
+
+            <div class="pe-stage">
+                <div class="pe-topbar">
+                    <div class="pe-topbar-copy">
+                    </div>
+
+                    <div class="pe-progress-wrap" aria-hidden="true">
+                        <div class="pe-progress-rail">
+                            <span class="pe-progress-fill"></span>
+                        </div>
+                        <div class="pe-dot-row">
+                            <span class="pe-dot pe-dot--1 is-active"></span>
+                            <span class="pe-dot pe-dot--2"></span>
+                            <span class="pe-dot pe-dot--3"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pe-layout">
+                    <div class="pe-copy-stack">
+                        <article class="pe-panel pe-panel--1">
+                            <span class="pe-index">01</span>
+                            <p class="pe-label">Research before reaction</p>
+                            <h2 class="pe-title">We study what others <em>skim.</em></h2>
+                            <p class="pe-description">Before capital moves, we examine the cycle, the business, and the
+                                behavior around it until conviction is earned rather than assumed.</p>
+                            <div class="pe-facts">
+                                <span>Cycle reading</span>
+                                <span>Evidence first</span>
+                                <span>Thesis review</span>
+                            </div>
+                        </article>
+
+                        <article class="pe-panel pe-panel--2">
+                            <span class="pe-index">02</span>
+                            <p class="pe-label">Structure is the edge</p>
+                            <h2 class="pe-title">We design for what could go <em>wrong.</em></h2>
+                            <p class="pe-description">Sizing, scenario planning, and decision rules are built up front,
+                                so the portfolio stays measured when markets become emotional.</p>
+                            <div class="pe-facts">
+                                <span>Risk design</span>
+                                <span>Position sizing</span>
+                                <span>Scenario planning</span>
+                            </div>
+                        </article>
+
+                        <article class="pe-panel pe-panel--3">
+                            <span class="pe-index">03</span>
+                            <p class="pe-label">Conviction, without theatre</p>
+                            <h2 class="pe-title">We let discipline look <em>quiet.</em></h2>
+                            <p class="pe-description">The outcome is a portfolio that feels composed, intentional, and
+                                built to compound without relying on noise, speed, or spectacle.</p>
+                            <div class="pe-facts">
+                                <span>Patient execution</span>
+                                <span>Long-term focus</span>
+                                <span>Measured conviction</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pe-visual-assembly" aria-hidden="true">
+                        <div class="pe-lens">
+                            <div class="pe-photo"></div>
+                            <div class="pe-lens-ring pe-lens-ring--outer"></div>
+                            <div class="pe-lens-ring pe-lens-ring--mid"></div>
+                            <div class="pe-lens-ring pe-lens-ring--inner"></div>
+                            <div class="pe-lens-axis pe-lens-axis--h"></div>
+                            <div class="pe-lens-axis pe-lens-axis--v"></div>
+                            <div class="pe-lens-core"></div>
+                            <span class="pe-node pe-node--one"></span>
+                            <span class="pe-node pe-node--two"></span>
+                            <span class="pe-node pe-node--three"></span>
+                        </div>
+
+                        <article class="pe-float-card pe-float-card--top is-active">
+                            <span class="pe-float-tag">Market Context</span>
+                            <p class="pe-float-text">Macro backdrop, sector leadership, and liquidity reviewed before
+                                any decision is made.</p>
+                        </article>
+
+                        <article class="pe-float-card pe-float-card--mid">
+                            <span class="pe-float-tag">Risk Review</span>
+                            <p class="pe-float-text">Position sizing and downside planning are established before entry,
+                                not after.</p>
+                        </article>
+
+                        <article class="pe-float-card pe-float-card--bottom">
+                            <span class="pe-float-tag">Execution Discipline</span>
+                            <p class="pe-float-text">Conviction is expressed with patience, not noise, and held with a
+                                long-horizon view.</p>
+                        </article>
+
+                        <div class="pe-meter">
+                            <span class="pe-meter-label">Research confidence</span>
+                            <div class="pe-meter-bars">
+                                <span class="pe-meter-bar"></span>
+                                <span class="pe-meter-bar"></span>
+                                <span class="pe-meter-bar"></span>
+                                <span class="pe-meter-bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pe-sticky-stage">
+
+            <!-- Immersive full-screen visual backdrop -->
+            <div class="pe-tree-bg" id="pe-tree"></div>
+
+            <!-- Soft radiant light to create massive depth -->
+            <div class="pe-atmosphere">
+                <div class="pe-godray"></div>
+            </div>
+
+            <!-- The cinematic overlaid typography -->
+            <div class="pe-text-stage">
+
+                <article class="pe-statement pe-s1">
+                    <span class="pe-num">01</span>
+                    <h2 class="pe-headline">Built on<br><em>deep research.</em></h2>
+                    <p class="pe-body">Every position begins months before the trade. We study cycles, structure, and
+                        market behavior — rooted in data, never driven by noise.</p>
+                </article>
+
+                <article class="pe-statement pe-s2">
+                    <span class="pe-num">02</span>
+                    <h2 class="pe-headline">Structured strategies.<br><em>Built to endure.</em></h2>
+                    <p class="pe-body">Research becomes framework. Framework becomes discipline. And discipline,
+                        compounded quietly over time, forms extraordinary wealth.</p>
+                </article>
+
+                <article class="pe-statement pe-s3">
+                    <span class="pe-num">03</span>
+                    <h2 class="pe-headline">Growth<br><em>you can trust.</em></h2>
+                    <p class="pe-body">Long-term wealth grows like a tree — unhurried, deeply rooted, and reaching
+                        steadily for what others cannot yet see.</p>
+                    <a href="#contact" class="cta-btn" id="ctaBtn" style="margin-top: 2rem;">
+                        <span>Start your journey</span>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                            <path d="M3.5 9H14.5M14.5 9L10 4.5M14.5 9L10 13.5" stroke="currentColor" stroke-width="1.3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- Wave: Philosophy → Research (dark #0c1a0e, from RIGHT) -->
+        <div class="wave-reveal" data-direction="right" aria-hidden="true">
+            <svg class="section-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,30 C120,70 300,0 480,45 C660,88 840,8 1020,50 C1200,88 1350,15 1440,30 L1440,90 L0,90 Z"
+                    fill="#0c1a0e" />
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- ════════════════════════════
+       § 3 · RESEARCH INTELLIGENCE SYSTEM
+       ════════════════════════════ -->
+    <section id="research-system" aria-label="Research intelligence">
+        <div class="rs-grid-bg" aria-hidden="true"></div>
+        <div class="rs-layout">
+
+            <div class="rs-content">
+                <p class="rs-eyebrow">Research Intelligence</p>
+                <h2 class="rs-title">Research is not a step.<br><em>It's the foundation.</em></h2>
+                <p class="rs-body">Every position begins with months of structured analysis — macro cycles, sector
+                    dynamics,
+                    risk topology, and behavioral patterns. We do not react to markets. We anticipate them.</p>
+                <p class="rs-rule">"Every decision is backed by evidence, not intuition."</p>
+            </div>
+
+            <div class="rs-panels" aria-hidden="true">
+
+                <!-- Panel 1 — Macro Analysis (back layer) -->
+                <div class="data-panel dp-back">
+                    <div class="dp-header">
+                        <span class="dp-label">Macro Analysis</span>
+                        <span class="dp-status dp-status--live">Live</span>
+                    </div>
+                    <div class="dp-bars">
+                        <div class="dp-bar-row"><span class="dp-bar-name">GDP Cycle</span>
+                            <div class="dp-bar-track">
+                                <div class="dp-bar-fill" style="--w:78%"></div>
+                            </div><span class="dp-bar-val">78</span>
+                        </div>
+                        <div class="dp-bar-row"><span class="dp-bar-name">Credit Spread</span>
+                            <div class="dp-bar-track">
+                                <div class="dp-bar-fill" style="--w:54%"></div>
+                            </div><span class="dp-bar-val">54</span>
+                        </div>
+                        <div class="dp-bar-row"><span class="dp-bar-name">Rate Outlook</span>
+                            <div class="dp-bar-track">
+                                <div class="dp-bar-fill" style="--w:91%"></div>
+                            </div><span class="dp-bar-val">91</span>
+                        </div>
+                        <div class="dp-bar-row"><span class="dp-bar-name">Liquidity</span>
+                            <div class="dp-bar-track">
+                                <div class="dp-bar-fill" style="--w:66%"></div>
+                            </div><span class="dp-bar-val">66</span>
+                        </div>
+                        <div class="dp-bar-row"><span class="dp-bar-name">Inflation Regime</span>
+                            <div class="dp-bar-track">
+                                <div class="dp-bar-fill" style="--w:43%"></div>
+                            </div><span class="dp-bar-val">43</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2 — Risk Assessment (mid layer) -->
+                <div class="data-panel dp-mid">
+                    <div class="dp-header">
+                        <span class="dp-label">Risk Assessment</span>
+                        <span class="dp-status dp-status--updated">Updated</span>
+                    </div>
+                    <div class="dp-heat">
+                        <div class="dp-heat-row">
+                            <div class="dp-cell dp-h3"></div>
+                            <div class="dp-cell dp-h2"></div>
+                            <div class="dp-cell dp-h4"></div>
+                            <div class="dp-cell dp-h1"></div>
+                            <div class="dp-cell dp-h3"></div>
+                        </div>
+                        <div class="dp-heat-row">
+                            <div class="dp-cell dp-h2"></div>
+                            <div class="dp-cell dp-h5"></div>
+                            <div class="dp-cell dp-h3"></div>
+                            <div class="dp-cell dp-h2"></div>
+                            <div class="dp-cell dp-h4"></div>
+                        </div>
+                        <div class="dp-heat-row">
+                            <div class="dp-cell dp-h4"></div>
+                            <div class="dp-cell dp-h3"></div>
+                            <div class="dp-cell dp-h1"></div>
+                            <div class="dp-cell dp-h5"></div>
+                            <div class="dp-cell dp-h2"></div>
+                        </div>
+                        <div class="dp-heat-row">
+                            <div class="dp-cell dp-h1"></div>
+                            <div class="dp-cell dp-h4"></div>
+                            <div class="dp-cell dp-h2"></div>
+                            <div class="dp-cell dp-h3"></div>
+                            <div class="dp-cell dp-h1"></div>
+                        </div>
+                    </div>
+                    <div class="dp-heat-legend">
+                        <span class="dp-leg dp-h1"></span>
+                        <span class="dp-leg dp-h3"></span>
+                        <span class="dp-leg dp-h5"></span>
+                        <span class="dp-leg-label">Low → High</span>
+                    </div>
+                </div>
+
+                <!-- Panel 3 — Portfolio Allocation (front layer) -->
+                <div class="data-panel dp-front">
+                    <div class="dp-header">
+                        <span class="dp-label">Portfolio Allocation</span>
+                        <span class="dp-status dp-status--q">Q1 2025</span>
+                    </div>
+                    <div class="dp-alloc">
+                        <div class="dp-alloc-row">
+                            <div class="dp-alloc-bar" style="--aw:62%">
+                                <div class="dp-alloc-fill"></div>
+                            </div>
+                            <div class="dp-alloc-meta"><span class="dp-alloc-name">Equities</span><span
+                                    class="dp-alloc-pct">62%</span></div>
+                        </div>
+                        <div class="dp-alloc-row">
+                            <div class="dp-alloc-bar" style="--aw:18%">
+                                <div class="dp-alloc-fill"></div>
+                            </div>
+                            <div class="dp-alloc-meta"><span class="dp-alloc-name">Fixed Income</span><span
+                                    class="dp-alloc-pct">18%</span></div>
+                        </div>
+                        <div class="dp-alloc-row">
+                            <div class="dp-alloc-bar" style="--aw:12%">
+                                <div class="dp-alloc-fill"></div>
+                            </div>
+                            <div class="dp-alloc-meta"><span class="dp-alloc-name">Alternatives</span><span
+                                    class="dp-alloc-pct">12%</span></div>
+                        </div>
+                        <div class="dp-alloc-row">
+                            <div class="dp-alloc-bar" style="--aw:8%">
+                                <div class="dp-alloc-fill"></div>
+                            </div>
+                            <div class="dp-alloc-meta"><span class="dp-alloc-name">Cash & Equiv.</span><span
+                                    class="dp-alloc-pct">8%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Wave: Research → Process (cream #F7F5EF, from LEFT) -->
+        <div class="wave-reveal" data-direction="left" aria-hidden="true">
+            <svg class="section-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,45 C240,90 480,0 720,55 C960,90 1200,5 1440,45 L1440,90 L0,90 Z" fill="#F7F5EF" />
+            </svg>
+        </div>
+    </section>
+
+
+
+    <!-- SCROLL CANVAS -->
+    <div class="scroll-canvas" id="scroll-canvas">
+        <div class="sticky-stage">
+
+            <video id="story-video" preload="auto" muted playsinline>
+                <source src="assets/Final_Scrub.mp4" type="video/mp4" />
+            </video>
+
+            <div class="overlay"></div>
+
+            <div class="brand">
+                <span class="brand-name">Jivraj Capital</span>
+                <span class="brand-tagline">Wealth Management</span>
+            </div>
+
+            <div class="progress-line">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <div class="text-stage">
+                <div class="phase phase-1" id="phase-1">
+                    <span class="phase-label">Foundation</span>
+                    <h2 class="phase-headline">Deep research<br />builds the foundation.</h2>
+                </div>
+                <div class="phase phase-2" id="phase-2">
+                    <span class="phase-label">Structure</span>
+                    <h2 class="phase-headline">Structured thinking<br />creates clarity.</h2>
+                </div>
+                <div class="phase phase-3" id="phase-3">
+                    <span class="phase-label">Growth</span>
+                    <h2 class="phase-headline">Disciplined growth<br />expands wealth.</h2>
+                </div>
+                <div class="phase phase-4" id="phase-4">
+                    <span class="phase-label">Outcome</span>
+                    <h2 class="phase-headline">Built to grow.<br />Designed to last.</h2>
+                </div>
+            </div>
+
+            <div class="scroll-hint" id="scroll-hint">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════
+       § 4 · PROCESS / HOW WE WORK
+       ════════════════════════════ -->
+    <section id="process" class="process-premium" aria-label="Our investment process">
+
+        <div class="proc-pin-shell">
+            <!-- Immersive dark/cinematic background -->
+            <div class="proc-bg-canvas" aria-hidden="true">
+                <div class="proc-orb proc-orb--1"></div>
+                <div class="proc-orb proc-orb--2"></div>
+                <div class="proc-bg-noise"></div>
+                <div class="proc-grid-pattern"></div>
+            </div>
+
+            <div class="proc-stage">
+                <!-- Left Details -->
+                <div class="proc-info-panel">
+                    <p class="proc-eyebrow">Our Process</p>
+                    <h2 class="proc-title">Five stages.<br><em>One direction.</em></h2>
+                    <p class="proc-subtitle">A disciplined framework — built on evidence, executed with precision.</p>
+
+                    <!-- Animated Progress Ring -->
+                    <div class="proc-indicator" aria-hidden="true">
+                        <svg class="proc-progress-ring" width="60" height="60" viewBox="0 0 60 60">
+                            <circle class="proc-ring-bg" cx="30" cy="30" r="28" fill="none" />
+                            <circle class="proc-ring-fill" cx="30" cy="30" r="28" fill="none"
+                                transform="rotate(-90 30 30)" />
+                        </svg>
+                        <span class="proc-indicator-num">01</span>
+                        <span class="proc-indicator-total">/ 05</span>
+                    </div>
+                </div>
+
+                <!-- Right Cards Stack -->
+                <div class="proc-cards-container">
+
+                    <div class="proc-card-ui" data-step="1">
+                        <div class="proc-card-glass">
+                            <div class="proc-card-header">
+                                <span class="proc-card-num-large">01</span>
+                                <div class="proc-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M12 7v5l3 1.5" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="proc-card-heading">Research</h3>
+                            <div class="proc-card-divider"></div>
+                            <p class="proc-card-desc">Deep-dive into macro cycles, sector fundamentals, and quantitative
+                                signals before a thesis is formed.</p>
+                            <div class="proc-card-footer">
+                                <span>Macro Cycles</span>
+                                <span>Signals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proc-card-ui" data-step="2">
+                        <div class="proc-card-glass">
+                            <div class="proc-card-header">
+                                <span class="proc-card-num-large">02</span>
+                                <div class="proc-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <path d="M4 10h16" stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M9 14h3M9 17h6" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="proc-card-heading">Strategy</h3>
+                            <div class="proc-card-divider"></div>
+                            <p class="proc-card-desc">Research becomes a structured investment thesis with defined risk
+                                parameters and return expectations.</p>
+                            <div class="proc-card-footer">
+                                <span>Risk Rules</span>
+                                <span>Parameters</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proc-card-ui" data-step="3">
+                        <div class="proc-card-glass">
+                            <div class="proc-card-header">
+                                <span class="proc-card-num-large">03</span>
+                                <div class="proc-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 20L5 12M10 20L10 8M15 20L15 5M20 20L20 10" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" />
+                                        <circle cx="5" cy="10" r="1.5" fill="currentColor" />
+                                        <circle cx="10" cy="6" r="1.5" fill="currentColor" />
+                                        <circle cx="15" cy="3" r="1.5" fill="currentColor" />
+                                        <circle cx="20" cy="8" r="1.5" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="proc-card-heading">Allocation</h3>
+                            <div class="proc-card-divider"></div>
+                            <p class="proc-card-desc">Capital is deployed with precision — position sizing calibrated to
+                                conviction, volatility, and portfolio correlation.</p>
+                            <div class="proc-card-footer">
+                                <span>Precision Sizing</span>
+                                <span>Correlation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proc-card-ui" data-step="4">
+                        <div class="proc-card-glass">
+                            <div class="proc-card-header">
+                                <span class="proc-card-num-large">04</span>
+                                <div class="proc-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M4 12c3-5 5-5 8-5s5 0 8 5c-3 5-5 5-8 5s-5 0-8-5z" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" fill="none" />
+                                        <circle cx="12" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"
+                                            fill="none" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="proc-card-heading">Monitoring</h3>
+                            <div class="proc-card-divider"></div>
+                            <p class="proc-card-desc">Continuous review of every position against thesis integrity,
+                                market evolution, and risk exposure.</p>
+                            <div class="proc-card-footer">
+                                <span>Active Review</span>
+                                <span>Integrity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proc-card-ui" data-step="5">
+                        <div class="proc-card-glass">
+                            <div class="proc-card-header">
+                                <span class="proc-card-num-large">05</span>
+                                <div class="proc-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 18c0-5 3-8 6-10 3 2 6 5 6 10" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" fill="none" />
+                                        <path d="M9 12c0-2.5 1.5-4 3-5 1.5 1 3 2.5 3 5" stroke="currentColor"
+                                            stroke-width="1" stroke-linecap="round" opacity="0.6" fill="none" />
+                                        <line x1="12" y1="7" x2="12" y2="4" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <circle cx="12" cy="3" r="1.5" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="proc-card-heading">Growth</h3>
+                            <div class="proc-card-divider"></div>
+                            <p class="proc-card-desc">Compounding returns over long horizons — patient, disciplined, and
+                                indifferent to short-term noise.</p>
+                            <div class="proc-card-footer">
+                                <span>Compounding</span>
+                                <span>Patience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave: Process → Trust (forest #1F3D2B, from RIGHT) -->
+        <div class="wave-reveal" data-direction="right" aria-hidden="true" style="position:relative; z-index:10;">
+            <svg class="section-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,55 C180,10 360,80 600,35 C840,0 1020,70 1200,40 C1320,20 1400,60 1440,55 L1440,90 L0,90 Z"
+                    fill="#1F3D2B" />
+            </svg>
+        </div>
+
+    </section>
+
+
+    <!-- ════════════════════════════
+       § 5 · TRUST / CREDIBILITY
+       ════════════════════════════ -->
+    <section id="trust" aria-label="Trust and credibility">
+        <div class="trust-inner">
+            <blockquote class="trust-quote">
+                <p>"The best investments are made with patience, not speed. With evidence, not noise."</p>
+            </blockquote>
+
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <span class="stat-number" data-target="12" data-suffix="+">0</span>
+                    <span class="stat-label">Years of Research Experience</span>
+                </div>
+                <div class="trust-stat">
+                    <span class="stat-number" data-target="500" data-suffix="+">0</span>
+                    <span class="stat-label">Research Reports Produced</span>
+                </div>
+                <div class="trust-stat">
+                    <span class="stat-number" data-target="10000" data-suffix="+">0</span>
+                    <span class="stat-label">Data Points Analyzed Annually</span>
+                </div>
+                <div class="trust-stat">
+                    <span class="stat-number" data-target="94" data-suffix="%">0</span>
+                    <span class="stat-label">Thesis Accuracy Rate</span>
+                </div>
+            </div>
+        </div>
+        <!-- Wave: Trust → Philosophy (cream #F7F5EF, from LEFT) -->
+        <div class="wave-reveal" data-direction="left" aria-hidden="true">
+            <svg class="section-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,40 C200,85 400,5 640,50 C880,88 1100,10 1300,48 C1380,65 1420,45 1440,40 L1440,90 L0,90 Z"
+                    fill="#F7F5EF" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════
+       § 6 · PHILOSOPHY
+       ════════════════════════════ -->
+    <section id="philosophy" aria-label="Investment philosophy">
+        <div class="philo-texture" aria-hidden="true"></div>
+        <div class="philo-aura philo-aura--one" aria-hidden="true"></div>
+        <div class="philo-aura philo-aura--two" aria-hidden="true"></div>
+        <div class="philo-beam" aria-hidden="true"></div>
+        <div class="philo-shell">
+            <div class="philo-heading">
+                <p class="philo-kicker">Our Philosophy</p>
+                <h2 class="philo-marquee">Clarity before capital. <em>Discipline before scale.</em></h2>
+                <p class="philo-intro">We build portfolios the way enduring products are built: deliberate in design,
+                    exact in execution, and calm under pressure.</p>
+            </div>
+
+            <div class="philo-observatory">
+                <div class="philo-panel-glow" aria-hidden="true"></div>
+
+                <div class="philo-copy">
+                    <span class="philo-chip">Disciplined by design</span>
+                    <h3 class="philo-title">We do not participate in noise. We convert uncertainty into a framework for
+                        decisive action.</h3>
+                    <p class="philo-description">Every allocation is pressure-tested through cycle analysis, liquidity,
+                        downside scenarios, and behavioral signals before capital is committed. The result is a
+                        portfolio designed to stay composed when the market is not.</p>
+
+                    <div class="philo-signals">
+                        <div class="philo-signal">
+                            <span class="philo-signal-value">90d+</span>
+                            <span class="philo-signal-label">Typical research horizon before conviction forms</span>
+                        </div>
+                        <div class="philo-signal">
+                            <span class="philo-signal-value">3 layers</span>
+                            <span class="philo-signal-label">Macro, business quality, and behavioral confirmation</span>
+                        </div>
+                        <div class="philo-signal">
+                            <span class="philo-signal-value">1 standard</span>
+                            <span class="philo-signal-label">Capital only moves when risk and reward are both
+                                clear</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="philo-cards">
+                    <article class="philo-card" data-depth="0.8">
+                        <div class="philo-card-top">
+                            <span class="philo-card-index">01</span>
+                            <span class="philo-card-tag">Signal</span>
+                        </div>
+                        <h3 class="philo-card-title">Study the system before the story.</h3>
+                        <p class="philo-card-body">We begin with regime, structure, and behavior so opportunity is
+                            framed by context instead of excitement.</p>
+                        <div class="philo-card-footer">
+                            <span>Macro cycles</span>
+                            <span>Behavioral tells</span>
+                        </div>
+                    </article>
+
+                    <article class="philo-card philo-card--offset" data-depth="1.1">
+                        <div class="philo-card-top">
+                            <span class="philo-card-index">02</span>
+                            <span class="philo-card-tag">Structure</span>
+                        </div>
+                        <h3 class="philo-card-title">Engineer resilience before upside.</h3>
+                        <p class="philo-card-body">Position sizing, entry discipline, and scenario mapping are designed
+                            first so growth does not depend on perfect conditions.</p>
+                        <div class="philo-card-footer">
+                            <span>Risk topology</span>
+                            <span>Capital discipline</span>
+                        </div>
+                    </article>
+
+                    <article class="philo-card" data-depth="1.35">
+                        <div class="philo-card-top">
+                            <span class="philo-card-index">03</span>
+                            <span class="philo-card-tag">Conviction</span>
+                        </div>
+                        <h3 class="philo-card-title">Move with patience. Hold with intent.</h3>
+                        <p class="philo-card-body">When the thesis is earned, we let time do its work and avoid the
+                            impulse to trade away long-term compounding.</p>
+                        <div class="philo-card-footer">
+                            <span>Long-horizon view</span>
+                            <span>Measured execution</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="philo-quote-dock">
+                    <span class="philo-quote-line" aria-hidden="true"></span>
+                    <p class="philo-quote">Our edge is not speed. It is the discipline to be early in research and
+                        patient in action.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Wave: Philosophy → Final CTA (dark #1a2f1e, from RIGHT) -->
+        <div class="wave-reveal" data-direction="right" aria-hidden="true">
+            <svg class="section-wave" viewBox="0 0 1440 90" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,25 C100,65 250,0 440,42 C630,80 780,5 1000,48 C1160,78 1320,12 1440,25 L1440,90 L0,90 Z"
+                    fill="#1a2f1e" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════
+       § 6.5 · FINANCIAL CALCULATORS
+       ════════════════════════════ -->
+    <section id="calculators" aria-label="Financial Calculators">
+        <div class="calc-inner">
+
+            <!-- LEFT: heading + vertical tab nav -->
+            <div class="calc-left">
+                <p class="calc-eyebrow">Financial Tools</p>
+                <h2 class="calc-title">Plan your wealth,<br><em>precisely.</em></h2>
+                <p class="calc-sub">Model your financial future with clarity — adjust any variable and see results
+                    instantly.</p>
+                <nav class="calc-tabs" role="tablist" aria-label="Calculator selection">
+                    <button class="calc-tab active" role="tab" data-calc="sip" aria-selected="true"
+                        aria-controls="panel-sip">
+                        <span class="tab-label">SIP Calculator</span>
+                        <svg class="tab-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    <button class="calc-tab" role="tab" data-calc="emi" aria-selected="false" aria-controls="panel-emi">
+                        <span class="tab-label">EMI Calculator</span>
+                        <svg class="tab-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    <button class="calc-tab" role="tab" data-calc="inflation" aria-selected="false"
+                        aria-controls="panel-inflation">
+                        <span class="tab-label">Inflation Impact</span>
+                        <svg class="tab-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    <button class="calc-tab" role="tab" data-calc="goal" aria-selected="false"
+                        aria-controls="panel-goal">
+                        <span class="tab-label">Goal SIP Planner</span>
+                        <svg class="tab-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- RIGHT: calculator panels -->
+            <div class="calc-right">
+
+                <!-- ── SIP Panel ── -->
+                <div class="calc-panel active" id="panel-sip" role="tabpanel" aria-labelledby="tab-sip">
+                    <div class="panel-header">
+                        <h3 class="panel-title">SIP Returns Estimator</h3>
+                        <p class="panel-desc">See how regular monthly investments compound over time.</p>
+                    </div>
+                    <div class="calc-body">
+                        <div class="calc-inputs">
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="sip-amount">Monthly Investment</label>
+                                    <span class="slider-val" id="sip-amount-val">₹5,000</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="sip-amount" min="500" max="100000"
+                                        step="500" value="5000" aria-label="Monthly investment amount">
+                                </div>
+                                <div class="slider-range-labels"><span>₹500</span><span>₹1 L</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="sip-rate">Expected Return (p.a.)</label>
+                                    <span class="slider-val" id="sip-rate-val">12.0%</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="sip-rate" min="1" max="30" step="0.5"
+                                        value="12" aria-label="Expected annual return rate">
+                                </div>
+                                <div class="slider-range-labels"><span>1%</span><span>30%</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="sip-years">Time Period</label>
+                                    <span class="slider-val" id="sip-years-val">10 yrs</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="sip-years" min="1" max="40" step="1"
+                                        value="10" aria-label="Investment time period">
+                                </div>
+                                <div class="slider-range-labels"><span>1 yr</span><span>40 yrs</span></div>
+                            </div>
+                        </div>
+                        <div class="calc-result">
+                            <div class="result-chart-wrap" aria-hidden="true">
+                                <svg class="donut-svg" viewBox="0 0 120 120">
+                                    <circle class="donut-bg" cx="60" cy="60" r="50" />
+                                    <circle class="donut-arc arc-invested" cx="60" cy="60" r="50" id="sip-arc-invested"
+                                        transform="rotate(-90 60 60)" />
+                                    <circle class="donut-arc arc-gains" cx="60" cy="60" r="50" id="sip-arc-gains"
+                                        transform="rotate(-90 60 60)" />
+                                </svg>
+                                <div class="donut-legend">
+                                    <div class="legend-item"><span
+                                            class="legend-dot dot-invested"></span><span>Invested</span></div>
+                                    <div class="legend-item"><span
+                                            class="legend-dot dot-gains"></span><span>Gains</span></div>
+                                </div>
+                            </div>
+                            <div class="result-rows">
+                                <div class="result-main">
+                                    <span class="result-main-label">Maturity Value</span>
+                                    <span class="result-main-val" id="sip-result" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-divider"></div>
+                                <div class="result-sub-row">
+                                    <span>Total Invested</span>
+                                    <span class="result-sub-val" id="sip-invested" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-sub-row">
+                                    <span>Wealth Gained</span>
+                                    <span class="result-sub-val gain" id="sip-gains" data-raw="0">₹0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── EMI Panel ── -->
+                <div class="calc-panel" id="panel-emi" role="tabpanel" aria-labelledby="tab-emi">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Loan EMI Estimator</h3>
+                        <p class="panel-desc">Understand your monthly repayment and total interest outflow.</p>
+                    </div>
+                    <div class="calc-body">
+                        <div class="calc-inputs">
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="emi-amount">Loan Amount</label>
+                                    <span class="slider-val" id="emi-amount-val">₹10.00 L</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="emi-amount" min="100000" max="10000000"
+                                        step="100000" value="1000000" aria-label="Loan amount">
+                                </div>
+                                <div class="slider-range-labels"><span>₹1 L</span><span>₹1 Cr</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="emi-rate">Interest Rate (p.a.)</label>
+                                    <span class="slider-val" id="emi-rate-val">8.5%</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="emi-rate" min="1" max="24" step="0.1"
+                                        value="8.5" aria-label="Annual interest rate">
+                                </div>
+                                <div class="slider-range-labels"><span>1%</span><span>24%</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="emi-years">Loan Tenure</label>
+                                    <span class="slider-val" id="emi-years-val">20 yrs</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="emi-years" min="1" max="30" step="1"
+                                        value="20" aria-label="Loan tenure">
+                                </div>
+                                <div class="slider-range-labels"><span>1 yr</span><span>30 yrs</span></div>
+                            </div>
+                        </div>
+                        <div class="calc-result">
+                            <div class="result-chart-wrap" aria-hidden="true">
+                                <svg class="donut-svg" viewBox="0 0 120 120">
+                                    <circle class="donut-bg" cx="60" cy="60" r="50" />
+                                    <circle class="donut-arc arc-invested" cx="60" cy="60" r="50" id="emi-arc-principal"
+                                        transform="rotate(-90 60 60)" />
+                                    <circle class="donut-arc arc-gains" cx="60" cy="60" r="50" id="emi-arc-interest"
+                                        transform="rotate(-90 60 60)" />
+                                </svg>
+                                <div class="donut-legend">
+                                    <div class="legend-item"><span
+                                            class="legend-dot dot-invested"></span><span>Principal</span></div>
+                                    <div class="legend-item"><span
+                                            class="legend-dot dot-gains"></span><span>Interest</span></div>
+                                </div>
+                            </div>
+                            <div class="result-rows">
+                                <div class="result-main">
+                                    <span class="result-main-label">Monthly EMI</span>
+                                    <span class="result-main-val" id="emi-result" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-divider"></div>
+                                <div class="result-sub-row">
+                                    <span>Total Payment</span>
+                                    <span class="result-sub-val" id="emi-total" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-sub-row">
+                                    <span>Total Interest</span>
+                                    <span class="result-sub-val gain" id="emi-interest" data-raw="0">₹0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Inflation Panel ── -->
+                <div class="calc-panel" id="panel-inflation" role="tabpanel" aria-labelledby="tab-inflation">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Inflation Impact</h3>
+                        <p class="panel-desc">Discover how inflation silently erodes the real value of your money.</p>
+                    </div>
+                    <div class="calc-body">
+                        <div class="calc-inputs">
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="inf-amount">Current Value</label>
+                                    <span class="slider-val" id="inf-amount-val">₹1.00 L</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="inf-amount" min="10000" max="10000000"
+                                        step="10000" value="100000" aria-label="Current value of money">
+                                </div>
+                                <div class="slider-range-labels"><span>₹10K</span><span>₹1 Cr</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="inf-rate">Inflation Rate (p.a.)</label>
+                                    <span class="slider-val" id="inf-rate-val">6.0%</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="inf-rate" min="1" max="20" step="0.5"
+                                        value="6" aria-label="Annual inflation rate">
+                                </div>
+                                <div class="slider-range-labels"><span>1%</span><span>20%</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="inf-years">Time Period</label>
+                                    <span class="slider-val" id="inf-years-val">10 yrs</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="inf-years" min="1" max="40" step="1"
+                                        value="10" aria-label="Time period">
+                                </div>
+                                <div class="slider-range-labels"><span>1 yr</span><span>40 yrs</span></div>
+                            </div>
+                        </div>
+                        <div class="calc-result">
+                            <div class="result-chart-wrap" aria-hidden="true">
+                                <div class="bar-chart">
+                                    <div class="bar-col">
+                                        <div class="bar-fill bar-present" id="inf-bar-present"></div>
+                                        <span class="bar-label">Today</span>
+                                    </div>
+                                    <div class="bar-col">
+                                        <div class="bar-fill bar-future" id="inf-bar-future"></div>
+                                        <span class="bar-label">Future Cost</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-rows">
+                                <div class="result-main">
+                                    <span class="result-main-label" id="inf-main-label">Future Cost of ₹1.00 L</span>
+                                    <span class="result-main-val" id="inf-result" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-divider"></div>
+                                <div class="result-sub-row">
+                                    <span>Additional Cost</span>
+                                    <span class="result-sub-val gain" id="inf-loss" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-sub-row">
+                                    <span>Purchasing Power Drop</span>
+                                    <span class="result-sub-val" id="inf-pct">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Goal SIP Panel ── -->
+                <div class="calc-panel" id="panel-goal" role="tabpanel" aria-labelledby="tab-goal">
+                    <div class="panel-header">
+                        <h3 class="panel-title">Goal-Based SIP Planner</h3>
+                        <p class="panel-desc">Find the exact monthly SIP required to reach your wealth target.</p>
+                    </div>
+                    <div class="calc-body">
+                        <div class="calc-inputs">
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="goal-target">Target Amount</label>
+                                    <span class="slider-val" id="goal-target-val">₹50.00 L</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="goal-target" min="100000"
+                                        max="100000000" step="100000" value="5000000" aria-label="Target wealth amount">
+                                </div>
+                                <div class="slider-range-labels"><span>₹1 L</span><span>₹10 Cr</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="goal-rate">Expected Return (p.a.)</label>
+                                    <span class="slider-val" id="goal-rate-val">12.0%</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="goal-rate" min="1" max="30" step="0.5"
+                                        value="12" aria-label="Expected annual return">
+                                </div>
+                                <div class="slider-range-labels"><span>1%</span><span>30%</span></div>
+                            </div>
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label class="slider-label" for="goal-years">Time Horizon</label>
+                                    <span class="slider-val" id="goal-years-val">15 yrs</span>
+                                </div>
+                                <div class="slider-track-wrap">
+                                    <input type="range" class="calc-slider" id="goal-years" min="1" max="40" step="1"
+                                        value="15" aria-label="Investment time horizon">
+                                </div>
+                                <div class="slider-range-labels"><span>1 yr</span><span>40 yrs</span></div>
+                            </div>
+                        </div>
+                        <div class="calc-result">
+                            <div class="result-chart-wrap" aria-hidden="true">
+                                <svg class="donut-svg" viewBox="0 0 120 120">
+                                    <circle class="donut-bg" cx="60" cy="60" r="50" />
+                                    <circle class="donut-arc arc-invested" cx="60" cy="60" r="50" id="goal-arc-invested"
+                                        transform="rotate(-90 60 60)" />
+                                    <circle class="donut-arc arc-gains" cx="60" cy="60" r="50" id="goal-arc-gains"
+                                        transform="rotate(-90 60 60)" />
+                                </svg>
+                                <div class="donut-legend">
+                                    <div class="legend-item"><span
+                                            class="legend-dot dot-invested"></span><span>Invested</span></div>
+                                    <div class="legend-item"><span
+                                            class="legend-dot dot-gains"></span><span>Returns</span></div>
+                                </div>
+                            </div>
+                            <div class="result-rows">
+                                <div class="result-main">
+                                    <span class="result-main-label">Monthly SIP Required</span>
+                                    <span class="result-main-val" id="goal-result" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-divider"></div>
+                                <div class="result-sub-row">
+                                    <span>Total Investment</span>
+                                    <span class="result-sub-val" id="goal-invested" data-raw="0">₹0</span>
+                                </div>
+                                <div class="result-sub-row">
+                                    <span>Wealth Created</span>
+                                    <span class="result-sub-val gain" id="goal-gains" data-raw="0">₹0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /calc-right -->
+        </div><!-- /calc-inner -->
+
+
+    </section>
+
+
+
+
+    <!-- ════════════════════════════
+       § 8.5 · COMPOUNDING STORY
+       ════════════════════════════ -->
+    <section id="compounding-story" class="compounding-section" aria-label="The beauty of compounding">
+        <div class="compounding-bg"></div>
+        <div class="compounding-overlay"></div>
+        <div class="compounding-aura" aria-hidden="true"></div>
+
+        <div class="compounding-content">
+            <h2 class="compounding-title">The Beauty of Compounding</h2>
+            <p class="compounding-main">Compounding is the quiet force that builds enduring wealth.</p>
+            <p class="compounding-sub">Time is the most powerful partner in wealth creation.</p>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════
+       § 7 · FINAL CTA
+       ════════════════════════════ -->
+    <section id="final-cta" aria-label="Begin your journey">
+        <div class="fcta-bg" aria-hidden="true"></div>
+        <div class="fcta-inner">
+            <p class="fcta-super">Jivraj Capital</p>
+            <h2 class="fcta-headline">Let your wealth grow<br><em>with clarity.</em></h2>
+            <p class="fcta-sub">Built on research. Designed for the long term.</p>
+            <a href="#contact" class="fcta-btn">
+                <span class="fcta-btn-text">Start your journey</span>
+                <span class="fcta-btn-arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════
+       § 8 · ENQUIRY FORM
+       ════════════════════════════ -->
+    <section id="enquiry" aria-label="Start a conversation">
+        <div class="enq-atmosphere" aria-hidden="true">
+            <span class="enq-orb enq-orb-one"></span>
+            <span class="enq-orb enq-orb-two"></span>
+            <span class="enq-grid"></span>
+        </div>
+        <div class="enq-inner">
+            <div class="enq-left">
+                <p class="enq-chip">Private Client Desk</p>
+                <p class="enq-eyebrow">Get in Touch</p>
+                <h2 class="enq-heading">Start a strategic<br><em>conversation</em></h2>
+                <p class="enq-text">Tell us where you want your wealth to go. We will shape the conversation around
+                    your horizon, your constraints, and the standard of clarity you expect.</p>
+                <div class="enq-signals" aria-label="Why enquire with us">
+                    <div class="enq-signal">
+                        <strong>24h</strong>
+                        <span>Personal response window</span>
+                    </div>
+                    <div class="enq-signal">
+                        <strong>1:1</strong>
+                        <span>Thoughtful, direct guidance</span>
+                    </div>
+                    <div class="enq-signal">
+                        <strong>Private</strong>
+                        <span>Handled with full discretion</span>
+                    </div>
+                </div>
+                <div class="enq-divider" aria-hidden="true"></div>
+                <p class="enq-note">Typically responds within 24 hours.</p>
+            </div>
+            <div class="enq-right">
+                <div class="enq-form-shell">
+                    <div class="enq-form-top">
+                        <p class="enq-form-kicker">Concierge Enquiry</p>
+                        <h3 class="enq-form-title">A cleaner way to begin.</h3>
+                        <p class="enq-form-text">Share a few details and we will return with a measured, high-context
+                            conversation.</p>
+                    </div>
+                    <form class="enq-form" id="enquiryForm" novalidate>
+                        <div class="enq-row">
+                            <div class="enq-field">
+                                <label for="enq-name">Full Name <span class="enq-req"
+                                        aria-hidden="true">*</span></label>
+                                <input type="text" id="enq-name" name="name" placeholder="Rajesh Sharma"
+                                    autocomplete="name" required>
+                            </div>
+                            <div class="enq-field">
+                                <label for="enq-phone">Phone <span class="enq-req" aria-hidden="true">*</span></label>
+                                <input type="tel" id="enq-phone" name="phone" placeholder="+91 98000 00000"
+                                    autocomplete="tel" required>
+                            </div>
+                        </div>
+                        <div class="enq-field">
+                            <label for="enq-email">Email Address <span class="enq-req"
+                                    aria-hidden="true">*</span></label>
+                            <input type="email" id="enq-email" name="email" placeholder="rajesh@example.com"
+                                autocomplete="email" required>
+                        </div>
+                        <div class="enq-row">
+                            <div class="enq-field">
+                                <label for="enq-range">Investment Range</label>
+                                <select id="enq-range" name="range">
+                                    <option value="" disabled selected>Select range</option>
+                                    <option>&#8377;5L &#8211; &#8377;25L</option>
+                                    <option>&#8377;25L &#8211; &#8377;1Cr</option>
+                                    <option>&#8377;1Cr &#8211; &#8377;5Cr</option>
+                                    <option>&#8377;5Cr+</option>
+                                </select>
+                            </div>
+                            <div class="enq-field">
+                                <label for="enq-goal">Investment Goal</label>
+                                <select id="enq-goal" name="goal">
+                                    <option value="" disabled selected>Select goal</option>
+                                    <option>Wealth Creation</option>
+                                    <option>Retirement Planning</option>
+                                    <option>Child Education</option>
+                                    <option>Tax Saving</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="enq-field">
+                            <label for="enq-message">Message <span class="enq-optional">(optional)</span></label>
+                            <textarea id="enq-message" name="message" rows="3"
+                                placeholder="Tell us more about your investment goals…"></textarea>
+                        </div>
+                        <button type="submit" class="enq-btn">
+                            <span>Submit Enquiry</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <p class="enq-privacy" aria-live="polite" id="enq-status">Your information is kept strictly
+                            confidential.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════
+       § 9 · FOOTER
+       ════════════════════════════ -->
+    <footer id="contact" aria-label="Site footer">
+        <div class="ft-top-line" aria-hidden="true"></div>
+
+        <div class="ft-shell">
+
+            <!-- CTA strip -->
+            <div class="ft-cta">
+                <div class="ft-cta-copy">
+                    <p class="ft-cta-eyebrow">Private Wealth Advisory</p>
+                    <p class="ft-cta-headline">Begin with a conversation.</p>
+                </div>
+                <div class="ft-cta-actions">
+                    <a href="#enquiry" class="ft-btn ft-btn--primary">Schedule a call</a>
+                    <a href="#research-system" class="ft-btn ft-btn--ghost">Our research approach</a>
+                </div>
+            </div>
+
+            <div class="ft-rule" aria-hidden="true"></div>
+
+            <!-- Main columns -->
+            <div class="ft-cols">
+
+                <div class="ft-brand">
+                    <p class="ft-brand-name">Jivraj Capital</p>
+                    <p class="ft-brand-desc">A refined wealth management practice shaped around structured strategy,
+                        deep diligence, and calm execution through changing market cycles.</p>
+                    <div class="ft-badges">
+                        <span>SEBI Registered</span>
+                        <span>Rajkot, Gujarat</span>
+                    </div>
+                </div>
+
+                <div class="ft-col">
+                    <p class="ft-col-head">Navigate</p>
+                    <nav aria-label="Footer navigation">
+                        <a href="#compounding-story" class="ft-link">Our Story</a>
+                        <a href="#philosophy" class="ft-link">Philosophy</a>
+                        <a href="#research-system" class="ft-link">Research</a>
+                        <a href="#trust" class="ft-link">Insights</a>
+                        <a href="#calculators" class="ft-link">Calculators</a>
+                        <a href="#enquiry" class="ft-link">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="ft-col">
+                    <p class="ft-col-head">Advisory Scope</p>
+                    <ul class="ft-plain-list" aria-label="Services">
+                        <li><a href="#" class="ft-link">Equity Advisory</a></li>
+                        <li><a href="#" class="ft-link">Mutual Funds</a></li>
+                        <li><a href="#" class="ft-link">Portfolio Review</a></li>
+                        <li><a href="#" class="ft-link">Retirement Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-col ft-col--contact">
+                    <p class="ft-col-head">Reach Us</p>
+                    <div class="ft-contact-rows">
+                        <a href="tel:+91XXXXXXXXXX" class="ft-contact-row">
+                            <span class="ft-contact-icon" aria-hidden="true">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                                </svg>
+                            </span>
+                            <span>+91 98000 00000</span>
+                        </a>
+                        <a href="mailto:info@jivrajcapital.com" class="ft-contact-row">
+                            <span class="ft-contact-icon" aria-hidden="true">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </span>
+                            <span>info@jivrajcapital.com</span>
+                        </a>
+                        <a href="https://wa.me/91XXXXXXXXXX" class="ft-contact-row ft-contact-row--wa" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="ft-contact-icon" aria-hidden="true">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                            </span>
+                            <span>WhatsApp</span>
+                        </a>
+                        <div class="ft-contact-row ft-contact-row--loc">
+                            <span class="ft-contact-icon" aria-hidden="true">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </span>
+                            <span>Rajkot, Gujarat</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="ft-bottom" role="contentinfo">
+                <span>&#169; 2026 Jivraj Capital. All rights reserved.</span>
+                <div class="ft-bottom-links">
+                    <span>SEBI Registered Investment Adviser</span>
+                    <span class="ft-dot" aria-hidden="true">&#183;</span>
+                    <span>Past performance is not indicative of future results.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- WhatsApp floating button -->
+    <a id="wa-btn" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
